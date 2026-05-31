@@ -9,7 +9,7 @@
 > **Developer:** Anmar Arafat Al-Momani   
 > **Platform:** Raspberry Pi 5 · Ubuntu · ROS2 Jazzy
 
-<img src="https://imgur.com/fDnXSB4" alt="GHRS Rover" width="600"/>
+<img src="https://i.imgur.com/fDnXSB4.png" alt="GHRS Rover" width="600"/>
 
 </div>
 
