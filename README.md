@@ -45,7 +45,7 @@ GHRS is an autonomous ground rover designed for greenhouse environments. It navi
 │         │ MJPEG:5001                      /ghrs/plant_health     │
 │                                                    │             │
 │  ┌──────────────┐    /imu/data    ┌───────────────────────────┐ │
-│  │   imu_node   │ ──────────────► │    turret_tracking        │ │
+│  │   imu_node   │ ──────────────► │    camera_tracking        │ │
 │  │  (BNO08x)    │                 │    (PID pan/tilt)         │ │
 │  └──────────────┘                 └───────────────┬───────────┘ │
 │  ┌──────────────┐                                 │/ghrs/turret │
@@ -129,7 +129,7 @@ ghrs_ros2/
 
 **`gps_node`** — Parses NMEA sentences from the NEO-6M GPS and publishes `NavSatFix` with HDOP-estimated covariance.
 
-**`camera_node`** — Captures from USB webcam and optionally a Dahua RTSP IP camera. Publishes `sensor_msgs/Image`. Runs a dedicated MJPEG TCP server on port 5001 separate from ROS spin.
+**`camera_node`** — Captures from USB webcam , Publishes `sensor_msgs/Image`. Runs a dedicated MJPEG TCP server on port 5001 separate from ROS spin.
 
 **`pump_led_node`** — Controls the water pump (GPIO 17) and status LED (GPIO 27), both active-low. Supports timed burst mode.
 
