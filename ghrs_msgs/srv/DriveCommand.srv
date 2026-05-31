@@ -1,0 +1,10 @@
+# TSR-1 Drive Command Service
+# Request
+float32 linear_x       # m/s  (positive = forward)
+float32 angular_z      # rad/s (positive = counter-clockwise)
+float32 duration_sec   # 0 = indefinite
+bool stop              # override: stop immediately
+---
+# Response
+bool success
+string message

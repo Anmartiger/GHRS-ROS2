@@ -1,0 +1,117 @@
+# GHRS Default Parameters
+# Author: Anmar Arafat Al-Momani
+
+tsr1:
+  motor_controller:
+    ros__parameters:
+      l_rpwm: 24
+      l_lpwm: 23
+      r_rpwm: 13
+      r_lpwm: 12
+      invert_lr: true
+      max_speed: 1.0
+      wheel_separation: 0.35
+      cmd_vel_timeout: 0.5
+
+  servo_controller:
+    ros__parameters:
+      i2c_bus: 1
+      i2c_addr: 0x40
+      pwm_freq: 50
+
+  imu_node:
+    ros__parameters:
+      i2c_bus: 1
+      i2c_addr: 0x4B
+      publish_rate: 50.0
+      frame_id: imu_link
+
+  gps_node:
+    ros__parameters:
+      port: /dev/ttyAMA0
+      baud: 9600
+      frame_id: gps_link
+
+  camera_node:
+    ros__parameters:
+      webcam_device: /dev/video0
+      webcam_width: 640
+      webcam_height: 480
+      webcam_fps: 30
+      ip_cam_rtsp: ""
+      ip_cam_user: ""
+      ip_cam_pass: ""
+      mjpeg_port: 5001
+
+  pump_led_node:
+    ros__parameters:
+      pump_pin: 17
+      led_pin: 27
+      active_low: true
+      burst_sec: 2.0
+
+  fire_detection:
+    ros__parameters:
+      h_low: 0
+      h_high: 35
+      s_low: 100
+      s_high: 255
+      v_low: 100
+      v_high: 255
+      pixel_ratio_thresh: 0.005
+      confirm_frames: 3
+
+  turret_tracking:
+    ros__parameters:
+      kp_pan: 0.08
+      ki_pan: 0.0
+      kd_pan: 0.02
+      kp_tilt: 0.06
+      ki_tilt: 0.0
+      kd_tilt: 0.02
+      pan_deadband: 0.05
+      tilt_deadband: 0.05
+      fire_deadband: 0.07
+      suppress_duration: 2.0
+      max_pan_deg: 80.0
+      max_tilt_deg: 45.0
+
+  obstacle_detect:
+    ros__parameters:
+      roi_top_frac: 0.55
+      edge_thresh: 0.08
+      canny_low: 50
+      canny_high: 150
+      blur_ksize: 5
+
+  plant_disease:
+    ros__parameters:
+      model_path: ""
+      input_width: 224
+      input_height: 224
+      confidence_min: 0.5
+      scan_rate_hz: 1.0
+      save_dir: /tmp/ghrs_samples
+
+  fire_suppression:
+    ros__parameters:
+      auto_suppress: true
+      suppress_timeout: 30.0
+      pump_pre_delay: 0.5
+      led_strobe_hz: 2.0
+
+  navigation_node:
+    ros__parameters:
+      waypoints_file: ""
+      arrival_radius: 2.0
+      patrol_speed: 0.3
+      turn_speed: 0.5
+      obstacle_stop: 0.15
+      obstacle_turn: 0.10
+      heading_kp: 0.03
+
+  report_node:
+    ros__parameters:
+      report_dir: /tmp/ghrs_reports
+      rover_id: GHRS
+      operator: "Anmar Arafat Al-Momani"

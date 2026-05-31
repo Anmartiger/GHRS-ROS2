@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ghrs_bringup</name>
+  <version>1.0.0</version>
+  <description>GHRS bringup: launch files and configuration</description>
+  <maintainer email="anmar.arafat@tsr1.dev">Anmar Arafat Al-Momani</maintainer>
+  <license>MIT</license>
+  <depend>ghrs_hardware</depend>
+  <depend>ghrs_perception</depend>
+  <depend>ghrs_navigation</depend>
+  <depend>ghrs_fire</depend>
+  <depend>ghrs_reporting</depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

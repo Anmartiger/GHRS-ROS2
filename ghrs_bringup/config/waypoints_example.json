@@ -1,0 +1,10 @@
+{
+  "description": "Example patrol waypoints – Amman, Jordan test field",
+  "waypoints": [
+    { "lat": 31.9554, "lon": 35.9454, "label": "Start / Home" },
+    { "lat": 31.9558, "lon": 35.9459, "label": "North Corner" },
+    { "lat": 31.9560, "lon": 35.9450, "label": "West Corner" },
+    { "lat": 31.9555, "lon": 35.9445, "label": "South West" },
+    { "lat": 31.9549, "lon": 35.9448, "label": "South East" }
+  ]
+}
