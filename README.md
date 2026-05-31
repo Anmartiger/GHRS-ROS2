@@ -6,8 +6,7 @@
 
 ### *Autonomous Plant Monitoring, Disease Detection & Pesticide Spraying Rover*
 
-> **Developer:** Anmar Arafat Al-Momani  
-> **Location:** Amman, Jordan  
+> **Developer:** Anmar Arafat Al-Momani   
 > **Platform:** Raspberry Pi 5 · Ubuntu · ROS2 Jazzy
 
 <img src="https://imgur.com/fDnXSB4" alt="GHRS Rover" width="600"/>
@@ -186,8 +185,7 @@ ros2 service call /ghrs/end_mission std_srvs/srv/Trigger
 ---
 
 <div align="center">
-
-**Built in Amman, Jordan**  
+ 
 *Developer: Anmar Arafat Al-Momani*
 
 </div>
