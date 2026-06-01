@@ -34,6 +34,17 @@ GHRS is an autonomous ground rover designed for greenhouse environments. It navi
 
 <img src="https://i.imgur.com/topf1nW.png" alt="GHRS Rover" width="600"/>
 
+# GHRS ROS2 Node Graph
+
+The **Greenhouse Rover System (GHRS)** is an autonomous agricultural rover built on Raspberry Pi 5. Its ROS2 architecture flows through four layers:
+
+- **Sensors & Input** — Camera, IMU, and GPS nodes feed raw data into the system.
+- **Processing** — Plant disease detection, PID-based camera tracking, and GPS waypoint navigation.
+- **Actuators** — Servo controller for turret aim and motor controller for wheel drive.
+- **Spray System** — Coordinates turret targeting and pump firing for precision pesticide delivery.
+
+All subsystems report to a central `report_node` that outputs a full mission log as HTML/JSON.
+
 ---
 
 ## Package Structure
