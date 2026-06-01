@@ -4,7 +4,7 @@
 
 # 🌿 GHRS · Green House Rover System
 
-### *Autonomous Plant Monitoring, Disease Detection & Pesticide Spraying Rover*
+### *Autonomous Green House Monitoring, Disease Detection & Pesticide Spraying Rover*
 
 > **Developer:** Anmar Arafat Al-Momani   
 > **Platform:** Raspberry Pi 5 · Ubuntu · ROS2 Jazzy
