@@ -97,6 +97,11 @@ ghrs_ros2/
 ```
 
 ---
+## GHRS Chassis and Body Showcase
+
+![Demo](assets/Video 2026-05-31 22-48-20.mp4)
+
+
 
 ## Node Reference
 
